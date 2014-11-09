@@ -1,0 +1,26 @@
+{
+  "name": "Notify",
+  "version": "1.0.0",
+  "description": "Your social media, easily visible.",
+  "main": "index.js",
+  "scripts": {
+    "test": "idk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enuddy/Notify.git"
+  },
+  "keywords": [
+    "npm",
+    "notify",
+    "youtube",
+    "facebook",
+    "youtube"
+  ],
+  "author": "Evan Nudd, Nick Foster, Dustin Lapierre",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/enuddy/Notify/issues"
+  },
+  "homepage": "https://github.com/enuddy/Notify"
+}
