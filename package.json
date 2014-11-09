@@ -17,10 +17,13 @@
     "facebook",
     "youtube"
   ],
+  "dependencies": {
+    "express": "latest"
+  },
   "author": "Evan Nudd, Nick Foster, Dustin Lapierre",
   "license": "none",
   "bugs": {
     "url": "https://github.com/enuddy/Notify/issues"
   },
-  "homepage": "https://github.com/enuddy/Notify"
+  "homepage": "https://github.com/enuddy/Notifye"
 }
