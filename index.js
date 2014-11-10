@@ -9,7 +9,7 @@ app.get('/', function(req, res){
 	// DO STUFF
 
 	// return stuff to client
-    res.send('Hello World');
+    res.send('Hello World, HOW DO YOU WORK');
 });
 
 app.get('/stuff.json', function(req, res){
