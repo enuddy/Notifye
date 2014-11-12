@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express();
 
+
 // Handle Get Request
 app.get('/', function(req, res){
 	// get stuff from request

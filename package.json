@@ -18,7 +18,8 @@
     "youtube"
   ],
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "youtube-api": "latest"
   },
   "author": "Evan Nudd, Nick Foster, Dustin Lapierre",
   "license": "none",
