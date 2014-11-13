@@ -1,7 +1,8 @@
 var express = require('express'),
     app = express();
 
-var youtube = require('./youtube.js');
+//var youtube = require('./youtube.js');
+var node = require('./vine.js');
 
 // Handle Get Request
 app.get('/', function(req, res){
@@ -9,8 +10,11 @@ app.get('/', function(req, res){
 	// req
 	
 	// DO STUFF
-	youtube.loadStuff();
-	youtube.seeThings();
+	//youtube.loadStuff();
+	//youtube.seeThings();
+	
+
+
 	// return stuff to client
     res.send('Hello World, HOW DO YOU WORK');
 });
