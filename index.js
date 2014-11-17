@@ -2,7 +2,7 @@ var express = require('express'),
     app = express();
 
 //var youtube = require('./youtube.js');
-var node = require('./vine.js');
+var vine = require('./vine.js');
 
 // Handle Get Request
 app.get('/', function(req, res){
@@ -12,7 +12,7 @@ app.get('/', function(req, res){
 	// DO STUFF
 	//youtube.loadStuff();
 	//youtube.seeThings();
-	
+	vine.seePopular();
 
 
 	// return stuff to client
@@ -24,5 +24,5 @@ app.get('/stuff.json', function(req, res){
 });
 
 
-app.listen(3000);
-console.log("listening at port 3000");
+app.listen(3000, 'localhost');
+console.log("listening at port 3000 and localHost?");
