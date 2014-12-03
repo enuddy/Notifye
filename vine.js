@@ -1,20 +1,48 @@
 var vine = require("node-vine");
 
+/*
+
+var t = new Twitter(){
+
+
+}
+
+*/
+
+
+
 var node = (function(){
-	
-	function popular()
+
+	function getVidWithTag(videoTags, callback)
 	{
-		vine.popular(function(err, response) {
-			var arrayLength = response.records.length;
-			for (var i = 0; i < arrayLength; i++)
-			{
-				console.log(response.records[i].videoUrl)
+		var tagName = videoTags.trim();
+		console.log("Finding video with tag: " + tagName);
+		
+		vine.tags(tagName, function(err, response){
+			if (err){
+				console.log("couldn't find tag");
+				// do nothing.
+			}
+			else{
+				if (response === undefined) return;
+				if (response.records[0] === undefined)
+				{
+					return;
+					// do nothing.
+				}
+				else{
+					var x = response.records[0].videoUrl;
+					callback(x);
+				}
 			}
 		});
-	}
+			
+	} // end of getVidWithTag functions
 
+
+	
 	return{
-		seePopular: popular,
+		getVid: getVidWithTag,
 	}
 }());
 
